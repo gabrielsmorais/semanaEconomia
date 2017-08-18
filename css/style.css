@@ -1,35 +1,136 @@
-body{
+html, body{
+  height: 100%;
+}
+
+header{
+  background-image: url(../resources/header.jpeg);
+  height: 100vh;
+  background-size: cover;
+  color: white;
+}
+
+.contentHeader{
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-align: center;
+  color: white;
+}
+
+.btn{
+  font-family: 'Raleway', sans-serif;
+  font-size: 150% !important;
+  font-weight: bolder;
+  width: 100%;
+  border-radius: 0px !important;
+}
+
+.col-md-3{
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+.btnEconomy{
+  background-color: #B71427;
+  color: white;
+}
+
+.btnEntrepe{
+  background-color: #FFE658;
+  color: white;
+}
+
+.btnObjective{
+  background-color: #6DBDD6;
+  color: white;
+}
+
+.btnPartners{
   background-color: black;
+  color: white;
+}
+
+#economy{
+  color: black;
+  height: 100vh;
+  width: auto;
+  background-color: #B71427;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-h1{
+.contentEconomy{
+  background-color: #FFE658;
+  width: 75%;
+  height: 50%;
+  margin-left: 85%;
+  margin-right: 60%;
+  display: flex;
+}
+
+.contentEconomy h1, h4{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#entrepe{
+  color: black;
+  height: 100vh;
+  background-color: #FFE658;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contentEntrepe{
+  background-color: #6D8DD6;
+  width: 75%;
+  height: 50%;
+  margin-left: 35%;
+  margin-right: 60%;
+}
+
+#objective{
+  color: black;
+  height: 100vh;
+  background-color: #6DBDD6;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contentObjective{
+  background-color: #B71427;
+  width: 75%;
+  height: 50%;
+  margin-left: 85%;
+  margin-right: 60%;
+}
+
+.contentPartners{
   color: white;
-  font-family: Verdana;
-  font-weight: normal;
-  font-size: 50px;
-}
-
-.secondH1{
-  font-family: Verdana;
-  font-weight: 300;
-  font-size: 42px;
-}
-
-p{
-  color: aquamarine;
-  font-size: 16px;
-  font-family: Verdana;
-}
-
-.secondP{
-  font-family: Verdana;
-  font-size: 21px;
-  color: gray;
-}
-
-.secondH2{
-  text-align: right;
-  color: gray;
-  font-family: Verdana;
+  height: 100vh;
+  background-color: black;
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
