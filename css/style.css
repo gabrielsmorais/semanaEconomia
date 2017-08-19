@@ -1,27 +1,28 @@
 html, body{
-  height: 100%;
+  /*height: 100%;*/
 }
 
-header{
-  background-image: url(../resources/header.jpeg);
-  height: 100vh;
-  background-size: cover;
-  color: white;
+h1{
+  font-family: 'Oswald', sans-serif !important;
+}
+
+h5{
+  font-family: 'Raleway', sans-serif !important;
 }
 
 .contentHeader{
-  font-family: 'Raleway', sans-serif;
+  height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: black;
+  background-color: black;
   text-align: center;
   color: white;
 }
 
 .btn{
-  font-family: 'Raleway', sans-serif;
   font-size: 150% !important;
   font-weight: bolder;
   width: 100%;
@@ -29,7 +30,7 @@ header{
 }
 
 .col-md-3{
-  padding-right: 0px !important;
+  padding-right: 1px !important;
   padding-left: 0px !important;
 }
 
@@ -56,81 +57,60 @@ header{
 #economy{
   color: black;
   height: 100vh;
-  width: auto;
+  width: 100%;
   background-color: #B71427;
-  font-family: 'Raleway', sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  position: relative;
 }
 
 .contentEconomy{
+  position: absolute;
+  text-align: center;
   background-color: #FFE658;
   width: 75%;
-  height: 50%;
-  margin-left: 85%;
-  margin-right: 60%;
-  display: flex;
-}
-
-.contentEconomy h1, h4{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: 40%;
+  top: 30%;
+  left: 25%
 }
 
 #entrepe{
   color: black;
   height: 100vh;
+  width: 100%;
   background-color: #FFE658;
-  font-family: 'Raleway', sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  position: relative;
 }
 
 .contentEntrepe{
+  position: absolute;
+  text-align: center;
   background-color: #6D8DD6;
   width: 75%;
-  height: 50%;
-  margin-left: 35%;
-  margin-right: 60%;
+  height: 40%;
+  top: 30%;
+  left: 0;
 }
 
 #objective{
   color: black;
   height: 100vh;
+  width: 100%;
   background-color: #6DBDD6;
-  font-family: 'Raleway', sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  position: relative;
 }
 
 .contentObjective{
+  position: absolute;
+  text-align: center;
   background-color: #B71427;
   width: 75%;
-  height: 50%;
-  margin-left: 85%;
-  margin-right: 60%;
+  height: 40%;
+  top: 30%;
+  left: 25%;
 }
 
 .contentPartners{
   color: white;
   height: 100vh;
+  width: 100%;
   background-color: black;
-  font-family: 'Raleway', sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
