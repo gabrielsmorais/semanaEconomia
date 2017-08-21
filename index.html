@@ -11,53 +11,63 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="jquery-1.8.3.js"></script>
     <script src="./js/main.js"></script>
   </head>
   <body>
       <div class="header">
-        <div class="row">
-          <div class="col-xs-12 col-md-3">
-            <a href="#economy"><button type="button" class="btn btn-default btnEconomy"  name="button">ECONOMIA</button></a>
-          </div>
-          <div class="col-xs-12 col-md-3">
-          <!-- <a href="#entrepe"><button type="button" class="btn btn-default btnEntrepe" name="button">EMPREENDEDORISMO</span></button></a> -->
-          </div>
-          <div class="col-xs-12 col-md-3">
-          <!-- <a href="#objective"><button type="button" class="btn btn-default btnObjective" name="button">OBJETIVO</button></a> -->
-          </div>
-          <div class="col-xs-12 col-md-3">
-          <!-- <a href="#partners"><button type="button" class="btn btn-default btnPartners" name="button">PARCEIROS</button></a> -->
-          </div>
-        </div>
         <div class="contentHeader">
-          <h1>Semana de Economia</h1>
-          <h4>asdfghjkl</h4>
+          <div id="main" class="is-loading" ScrollReveal()>
+          	<h1>
+          		Semana FEA
+          	</h1>
+          </div>
         </div>
       </div>
         <div id="economy">
           <div id="gradient" class="contentEconomy">
-            <h1>Para economistas:</h1>
+            <div id="main2" class="is-loading">
+              <h2>
+                Semana FEA
+              </h2>
+            </div>
             <h4>O evento organizara varias palestras com os temais mais atuais da economia no momento , no brasil e no munZXZXVNKZXLVZNdo</h4>
           </div>
       </div>
-    <div id="entrepe">
+    <div data-sr id="entrepe">
       <div class="contentEntrepe">
-        <h1>Para curiosos e outros cursos </h1>
+        <div id="main3" class="is-loading">
+          <h2>
+            Semana FEA
+          </h2>
+        </div>
         <h5> a semana de economia não se limita só a temas estritamente da area, o tema inovação e a palavra do momento e o empreendedorismo aparece ai! com temas atuais que todo profisional sec 21 precisa saBER!</h5>
       </div>
     </div>
     <div id="objective">
       <div class="contentObjective">
-        <h1> o evento</h1>
+        <div id="main4" class="is-loading">
+          <h2>
+            Semana FEA
+          </h2>
+        </div>
         <h5> com duração de uma semana , o evento tem palestras divididas entre manha,tarde e noite , com inicio nos horarios (x) e termino nos horarios (y ) , palestrantse conceituados e gabaritados de suas respectivas areas estarão compartilhando conosco da Puc . suas visões e conhecimentos</h5>
       </div>
     </div>
     <div id="partners">
       <div class="contentPartners">
-        <h1>parceiros</h1>
-        <h4>asdfg</h4>
+        <div id="main5" class="is-loading">
+          <h2>
+            Semana FEA
+          </h2>
+        </div>
       </div>
     </div>
+    <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+    <script>
+      window.sr = ScrollReveal({ reset: true });
+      sr.reveal('.contentEconomy', {opacity: 0,duration:1000,origin:'right', distance:'400px'});
+      sr.reveal('.contentEntrepe', {opacity: 0,duration:1000,origin:'left', distance:'400px'});
+      sr.reveal('.contentObjective', {opacity: 0,duration:1000,origin:'right', distance:'400px'});
+      </script>
   </body>
 </html>

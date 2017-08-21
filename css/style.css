@@ -2,14 +2,6 @@ html, body{
   /*height: 100%;*/
 }
 
-h1{
-  font-family: 'Oswald', sans-serif !important;
-}
-
-h5{
-  font-family: 'Raleway', sans-serif !important;
-}
-
 .contentHeader{
   height: 100vh;
   width: 100%;
@@ -67,8 +59,8 @@ h5{
   text-align: center;
   background-color: #FFE658;
   width: 75%;
-  height: 40%;
-  top: 30%;
+  height: 60%;
+  top: 20%;
   left: 25%
 }
 
@@ -85,8 +77,8 @@ h5{
   text-align: center;
   background-color: #6D8DD6;
   width: 75%;
-  height: 40%;
-  top: 30%;
+  height: 60%;
+  top: 20%;
   left: 0;
 }
 
@@ -103,8 +95,8 @@ h5{
   text-align: center;
   background-color: #B71427;
   width: 75%;
-  height: 40%;
-  top: 30%;
+  height: 60%;
+  top: 20%;
   left: 25%;
 }
 
@@ -113,4 +105,149 @@ h5{
   height: 100vh;
   width: 100%;
   background-color: black;
+}
+
+body {
+	background: #445;
+	color: #FFF;
+}
+
+h5{
+  font-family: 'Raleway', sans-serif !important;
+}
+
+#main {
+  font-family: 'Oswald', sans-serif !important;
+	background: linear-gradient(to bottom, rgba(0,0,0,0.66) 100%, transparent), url();
+	background-size: cover, cover;
+	background-position: center, center;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  left: 1%;
+}
+
+h1 {
+	font-size: 5.5rem !important;
+	display: inline-block;
+	padding: 1rem;
+	font-weight: 400;
+	position: relative;
+	opacity: 1;
+	transform: scale(1);
+	transition: transform 0.5s ease, opacity 1s ease;
+}
+
+.is-loading h1 {
+	transform: scale(0.9);
+	opacity: 0;
+}
+
+h1:before,
+h1:after {
+	height: 2px;
+	width: 100%;
+	content: "";
+	background: white;
+	display: block;
+	position: absolute;
+	transition: width 0.4s ease;
+	transition-delay: 0.8s;
+}
+
+h1:before {
+	top: 0;
+	left: 0;
+}
+
+h1:after {
+	bottom: 0;
+	right: 0;
+}
+
+.is-loading h1:before,
+.is-loading h1:after {
+	width: 0;
+}
+
+#main2 {
+  font-family: 'Oswald', sans-serif !important;
+  color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  left: 1%;
+}
+
+h2 {
+  width: 100%;
+	font-size: 2.5rem !important;
+	display: inline-block;
+	padding: 1rem;
+	font-weight: 400;
+	position: relative;
+	opacity: 1;
+	transform: scale(1);
+	transition: transform 0.5s ease, opacity 1s ease;
+}
+
+.is-loading h2 {
+	transform: scale(0.9);
+	opacity: 0;
+}
+
+h2:before,
+h2:after {
+	height: 2px;
+	width: 100%;
+	content: "";
+	background: white;
+	display: block;
+	position: absolute;
+	transition: width 0.4s ease;
+	transition-delay: 0.8s;
+}
+
+h2:before {
+	top: 0;
+	left: 0;
+}
+
+h2:after {
+	bottom: 0;
+	right: 0;
+}
+
+.is-loading h2:before,
+.is-loading h2:after {
+	width: 0;
+}
+
+#main3 {
+  font-family: 'Oswald', sans-serif !important;
+  color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  left: 1%;
+}
+
+#main4 {
+  font-family: 'Oswald', sans-serif !important;
+  color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  left: 1%;
+}
+
+#main5 {
+  font-family: 'Oswald', sans-serif !important;
+  color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  left: 1%;
 }

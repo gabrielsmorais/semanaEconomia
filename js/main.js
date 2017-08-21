@@ -1,4 +1,4 @@
-setInterval(updateGradient,10);
+setInterval(updateGradient,100);
 
 var colors = new Array(
   [255,110,110],
@@ -60,3 +60,33 @@ var color2 = "rgb("+r2+","+g2+","+b2+")";
 }
 
 setInterval(updateGradient,10);
+
+$(document).ready(function() {
+	setTimeout(function() {
+		$("#main").removeClass("is-loading");
+	}, 100)
+});
+
+$(document).ready(function() {
+	setTimeout(function() {
+		$("#main2").removeClass("is-loading");
+	}, 100)
+});
+
+$(document).ready(function() {
+	setTimeout(function() {
+		$("#main3").removeClass("is-loading");
+	}, 100)
+});
+
+$(document).ready(function() {
+	setTimeout(function() {
+		$("#main4").removeClass("is-loading");
+	}, 100)
+});
+
+$(document).ready(function() {
+	setTimeout(function() {
+		$("#main5").removeClass("is-loading");
+	}, 100)
+});
