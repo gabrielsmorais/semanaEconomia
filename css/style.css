@@ -1,9 +1,7 @@
 html, body{
-  /*display: inline-flex;*/
   overflow-x:hidden;
   max-width: 100%;
   width: 100%;
-  border: 1px solid black;
 }
 
 .contentHeader{
@@ -22,35 +20,40 @@ html, body{
   color: black;
   height: 100vh;
   width: 100%;
-  background-color: #B71427;
+  background-color: #6279E2;
   position: relative;
 }
 
 .contentEconomy{
   position: absolute;
   text-align: center;
-  background-color: #FFE658;
-  width: 75%;
-  height: 60%;
-  top: 20%;
-  left: 25%
+  display: flex;
+  flex-direction: column;
+  /*margin: auto;*/
+  justify-content: flex-start;
+  background-color: #FFF200;
+  width: 74%;
+  height: 74%;
+  top: 13%;
+  left: 26%;
 }
 
 #entrepe{
   color: black;
   height: 100vh;
   width: 100%;
-  background-color: #FFE658;
+  background-color: #FFF200;
   position: relative;
 }
 
 .contentEntrepe{
   position: absolute;
   text-align: center;
-  background-color: #6D8DD6;
-  width: 75%;
-  height: 60%;
-  top: 20%;
+  /*justify-content: flex-start;*/
+  background-color: #FF2E2E;
+  width: 74%;
+  height: 74%;
+  top: 13%;
   left: 0;
 }
 
@@ -58,18 +61,18 @@ html, body{
   color: black;
   height: 100vh;
   width: 100%;
-  background-color: #6DBDD6;
+  background-color: #FF2E18;
   position: relative;
 }
 
 .contentObjective{
   position: absolute;
   text-align: center;
-  background-color: #B71427;
-  width: 75%;
-  height: 60%;
-  top: 20%;
-  left: 25%;
+  background-color: #6279E2;
+  width: 74%;
+  height: 74%;
+  top: 13%;
+  left: 26%;
 }
 
 .contentPartners{
@@ -85,7 +88,7 @@ h5{
 
 #main {
   font-family: 'Oswald', sans-serif !important;
-	background: linear-gradient(to bottom, rgba(0,0,0,0.66) 100%, transparent), url();
+	background: linear-gradient(to bottom, rgba(0,0,0,0.66) 100%, transparent), url(../resources/header.jpeg);
 	background-size: cover, cover;
 	background-position: center, center;
 	height: 100vh;
@@ -141,7 +144,7 @@ h1:after {
 
 #main2 {
   font-family: 'Oswald', sans-serif !important;
-  color: white;
+  color: black;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -170,7 +173,7 @@ h2:after {
 	height: 2px;
 	width: 100%;
 	content: "";
-	background: white;
+	background: black;
 	display: block;
 	position: absolute;
 	transition: width 0.4s ease;
@@ -194,7 +197,7 @@ h2:after {
 
 #main3 {
   font-family: 'Oswald', sans-serif !important;
-  color: white;
+  color: black;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -203,7 +206,7 @@ h2:after {
 
 #main4 {
   font-family: 'Oswald', sans-serif !important;
-  color: white;
+  color: black;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -280,4 +283,56 @@ h2:after {
 .arrows path.a3 {
 	animation-delay:0s;
 	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+
+.button{
+  position: absolute;
+  bottom: -7px;
+  width: 100%;
+  font-family: 'Oswald', sans-serif !important;
+  color: black;
+}
+
+.partners {
+  width: 100%;
+	font-size: 2.5rem !important;
+	display: inline-block;
+	padding: 1rem;
+	font-weight: 400;
+	position: relative;
+	opacity: 1;
+	transform: scale(1);
+	transition: transform 0.5s ease, opacity 1s ease;
+}
+
+.is-loading .partners {
+	transform: scale(0.9);
+	opacity: 0;
+}
+
+.partners:before,
+.partners:after {
+	height: 2px;
+	width: 100%;
+	content: "";
+	background: white;
+	display: block;
+	position: absolute;
+	transition: width 0.4s ease;
+	transition-delay: 0.8s;
+}
+
+.partners:before {
+	top: 0;
+	left: 0;
+}
+
+.partners:after {
+	bottom: 0;
+	right: 0;
+}
+
+.is-loading .partners:before,
+.is-loading .partners:after {
+	width: 0;
 }
