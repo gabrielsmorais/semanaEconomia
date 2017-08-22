@@ -1,5 +1,9 @@
 html, body{
-  /*height: 100%;*/
+  /*display: inline-flex;*/
+  overflow-x:hidden;
+  max-width: 100%;
+  width: 100%;
+  border: 1px solid black;
 }
 
 .contentHeader{
@@ -11,38 +15,6 @@ html, body{
   align-items: center;
   background-color: black;
   text-align: center;
-  color: white;
-}
-
-.btn{
-  font-size: 150% !important;
-  font-weight: bolder;
-  width: 100%;
-  border-radius: 0px !important;
-}
-
-.col-md-3{
-  padding-right: 1px !important;
-  padding-left: 0px !important;
-}
-
-.btnEconomy{
-  background-color: #B71427;
-  color: white;
-}
-
-.btnEntrepe{
-  background-color: #FFE658;
-  color: white;
-}
-
-.btnObjective{
-  background-color: #6DBDD6;
-  color: white;
-}
-
-.btnPartners{
-  background-color: black;
   color: white;
 }
 
@@ -105,11 +77,6 @@ html, body{
   height: 100vh;
   width: 100%;
   background-color: black;
-}
-
-body {
-	background: #445;
-	color: #FFF;
 }
 
 h5{
@@ -250,4 +217,67 @@ h2:after {
 	justify-content: center;
 	align-items: center;
   left: 1%;
+}
+
+#arrows {
+	width: 80px;
+	height: 92px;
+	position: absolute;
+	left: 50%;
+	margin-left: -90px;
+	bottom: 20px;
+}
+
+#arrows path {
+	stroke: #FFFFFF;
+	fill: transparent;
+	stroke-width: 3px;
+}
+
+.arrows {
+	width: 80px;
+	height: 92px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	bottom: 10%;
+}
+
+.arrows path {
+	stroke: #FFFFFF;
+	fill: transparent;
+	stroke-width: 3px;
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
 }
