@@ -4,6 +4,11 @@ html, body{
   width: 100%;
 }
 
+a{
+  display: block;
+  color: black !important;
+}
+
 .contentHeader{
   height: 100vh;
   width: 100%;
@@ -13,14 +18,14 @@ html, body{
   align-items: center;
   background-color: black;
   text-align: center;
-  color: white;
+  color: #F4EBDB;
 }
 
 #economy{
   color: black;
   height: 100vh;
   width: 100%;
-  background-color: #6279E2;
+  background-color: #1B4B5A;
   position: relative;
 }
 
@@ -31,59 +36,70 @@ html, body{
   flex-direction: column;
   /*margin: auto;*/
   justify-content: flex-start;
-  background-color: #FFF200;
+  background-color: #E1B16A;
   width: 74%;
   height: 74%;
   top: 13%;
   left: 26%;
+}
+
+.contentEconomy h5{
+  text-align: justify;
 }
 
 #entrepe{
   color: black;
   height: 100vh;
   width: 100%;
-  background-color: #FFF200;
+  background-color: #78A5A3;
   position: relative;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.66) 100%, transparent), url(../resources/header.jpeg);
 }
 
 .contentEntrepe{
   position: absolute;
   text-align: center;
   /*justify-content: flex-start;*/
-  background-color: #FF2E2E;
+  background-color: #E1B16A;
   width: 74%;
   height: 74%;
   top: 13%;
   left: 0;
 }
 
+.contentEntrepe h5{
+  text-align: justify;
+}
+
 #objective{
   color: black;
   height: 100vh;
   width: 100%;
-  background-color: #FF2E18;
+  background-color: #1A2930;
   position: relative;
 }
 
 .contentObjective{
   position: absolute;
-  text-align: center;
-  background-color: #6279E2;
+  text-align: justify;
+  background-color: #CDA34F;
   width: 74%;
   height: 74%;
   top: 13%;
-  left: 26%;
+  left: 0;
 }
 
 .contentPartners{
-  color: white;
+  color: black;
   height: 100vh;
   width: 100%;
-  background-color: black;
+  background-color: #00303F;
 }
 
 h5{
   font-family: 'Raleway', sans-serif !important;
+  opacity: 0.9;
+  font-size: calc(1.9vw + 1.8vh) !important;
 }
 
 #main {
@@ -100,7 +116,7 @@ h5{
 }
 
 h1 {
-	font-size: 5.5rem !important;
+	font-size: 6.5rem !important;
 	display: inline-block;
 	padding: 1rem;
 	font-weight: 400;
@@ -120,7 +136,7 @@ h1:after {
 	height: 2px;
 	width: 100%;
 	content: "";
-	background: white;
+	background: #D9B44A;
 	display: block;
 	position: absolute;
 	transition: width 0.4s ease;
@@ -153,19 +169,19 @@ h1:after {
 
 h2 {
   width: 100%;
-	font-size: 2.5rem !important;
+	font-size: 2rem !important;
 	display: inline-block;
 	padding: 1rem;
 	font-weight: 400;
 	position: relative;
-	opacity: 1;
+	opacity: 0.7;
 	transform: scale(1);
 	transition: transform 0.5s ease, opacity 1s ease;
 }
 
 .is-loading h2 {
 	transform: scale(0.9);
-	opacity: 0;
+	opacity: 0.5;
 }
 
 h2:before,
@@ -215,7 +231,7 @@ h2:after {
 
 #main5 {
   font-family: 'Oswald', sans-serif !important;
-  color: white;
+  color: #DCA13D;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -232,7 +248,7 @@ h2:after {
 }
 
 #arrows path {
-	stroke: #FFFFFF;
+	stroke: #DCA13D;
 	fill: transparent;
 	stroke-width: 3px;
 }
@@ -243,11 +259,11 @@ h2:after {
 	position: absolute;
 	left: 50%;
 	margin-left: -30px;
-	bottom: 10%;
+	bottom: 7%;
 }
 
 .arrows path {
-	stroke: #FFFFFF;
+	stroke: #DCA13D;
 	fill: transparent;
 	stroke-width: 3px;
 	animation: arrow 2s infinite;
@@ -287,7 +303,7 @@ h2:after {
 
 .button{
   position: absolute;
-  bottom: -7px;
+  bottom: -8px;
   width: 100%;
   font-family: 'Oswald', sans-serif !important;
   color: black;
@@ -315,7 +331,7 @@ h2:after {
 	height: 2px;
 	width: 100%;
 	content: "";
-	background: white;
+	background: #DCA13D;
 	display: block;
 	position: absolute;
 	transition: width 0.4s ease;
