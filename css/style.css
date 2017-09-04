@@ -25,7 +25,7 @@ a{
   color: black;
   height: 100vh;
   width: 100%;
-  background-color: #1B4B5A;
+  background-color: #234BDC;
   position: relative;
 }
 
@@ -36,7 +36,7 @@ a{
   flex-direction: column;
   /*margin: auto;*/
   justify-content: flex-start;
-  background-color: #E1B16A;
+  background-color: #FFFC4B;
   width: 74%;
   height: 74%;
   top: 13%;
@@ -47,20 +47,28 @@ a{
   text-align: justify;
 }
 
+.textEconomy{
+  display: flex;
+  border: 1px solid black;
+  position: absolute;
+  align-self: center;
+  align-content: center;
+  bottom: calc(5.2vw + 10vh) !important;
+  top: 19vh;
+}
+
 #entrepe{
   color: black;
   height: 100vh;
   width: 100%;
-  background-color: #78A5A3;
+  background-color: #425EC3;
   position: relative;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.66) 100%, transparent), url(../resources/header.jpeg);
 }
 
 .contentEntrepe{
   position: absolute;
   text-align: center;
-  /*justify-content: flex-start;*/
-  background-color: #E1B16A;
+  background-color: #FFFD67;
   width: 74%;
   height: 74%;
   top: 13%;
@@ -75,14 +83,14 @@ a{
   color: black;
   height: 100vh;
   width: 100%;
-  background-color: #1A2930;
+  background-color: #060791;
   position: relative;
 }
 
 .contentObjective{
   position: absolute;
   text-align: justify;
-  background-color: #CDA34F;
+  background-color: #FFFB1A;
   width: 74%;
   height: 74%;
   top: 13%;
@@ -93,19 +101,20 @@ a{
   color: black;
   height: 100vh;
   width: 100%;
-  background-color: #00303F;
+  background-color: #F1F2F2;
 }
 
 h5{
   font-family: 'Raleway', sans-serif !important;
   opacity: 0.9;
   font-size: calc(1.9vw + 1.8vh) !important;
+  margin: calc(2.2vw + 2vh) !important;
 }
 
 #main {
   font-family: 'Oswald', sans-serif !important;
-	background: linear-gradient(to bottom, rgba(0,0,0,0.66) 100%, transparent), url(../resources/header.jpeg);
-	background-size: cover, cover;
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 100%, transparent), url(../resources/header.jpg);
+	background-size: cover;
 	background-position: center, center;
 	height: 100vh;
 	width: 100%;
@@ -167,9 +176,17 @@ h1:after {
   left: 1%;
 }
 
+h2.h2Top{
+  top: 3vw;
+}
+
+h2.h2Bottom{
+  bottom: 3vw;
+}
+
 h2 {
   width: 100%;
-	font-size: 2rem !important;
+	font-size: calc(2.9vw + 2.8vh) !important;
 	display: inline-block;
 	padding: 1rem;
 	font-weight: 400;
@@ -186,7 +203,7 @@ h2 {
 
 h2:before,
 h2:after {
-	height: 2px;
+	height: 3px;
 	width: 100%;
 	content: "";
 	background: black;
@@ -310,7 +327,8 @@ h2:after {
 }
 
 .partners {
-  width: 100%;
+  max-width: 100vw;
+  max-height: 100vw;
 	font-size: 2.5rem !important;
 	display: inline-block;
 	padding: 1rem;
@@ -351,4 +369,214 @@ h2:after {
 .is-loading .partners:before,
 .is-loading .partners:after {
 	width: 0;
+}
+
+.backgroundObjective {
+  position: absolute;
+  right: 65%;
+  bottom: 91%;
+}
+
+.shapeObjective {
+  position: absolute;
+  /*top: 50%;*/
+  /*left: 50%;*/
+  height: calc(75vw + 60vh);
+  /*margin-left: -75px;*/
+  /*margin-top: -150px;*/
+  width: calc(75vw + 60vh);
+  transition: 1s all ease;
+  transform: rotate(60deg);
+}
+
+.frontObjective{
+  background: #FFFB1A;
+}
+
+.backObjective{
+  background: #234BDC;
+  background-size: cover;
+  background-position: 40% 50%;
+}
+
+.one,
+.backgroundObjective:hover .six {
+  -webkit-clip-path: polygon(10% 10%, 51% 0, 10% 27%);
+  -moz-clip-path: polygon(10% 10%, 51% 0, 10% 27%);
+  clip-path: polygon(10% 10%, 51% 0, 10% 27%);
+}
+
+.two,
+.backgroundObjective:hover .five {
+  -webkit-clip-path: polygon(10% 10%, 87% 19%, 86% 32%, 10% 27%);
+  -moz-clip-path: polygon(10% 10%, 87% 19%, 86% 32%, 10% 27%);
+  clip-path: polygon(10% 10%, 87% 19%, 86% 32%, 10% 27%);
+}
+
+.three,
+.backgroundObjective:hover .four {
+  -webkit-clip-path: polygon(0% 41%, 87% 19%, 86% 32%, 0% 58%);
+  -moz-clip-path: polygon(0% 41%, 87% 19%, 86% 32%, 0% 58%);
+  clip-path: polygon(0% 41%, 87% 19%, 86% 32%, 0% 58%);
+}
+
+.four,
+.backgroundObjective:hover .three {
+  -webkit-clip-path: polygon(0% 41%, 100% 44%, 99% 63%, 0% 58%);
+  -moz-clip-path: polygon(0% 41%, 100% 44%, 99% 63%, 0% 58%);
+  clip-path: polygon(0% 41%, 100% 44%, 99% 63%, 0% 58%);
+}
+
+.five,
+.backgroundObjective:hover .two {
+  -webkit-clip-path: polygon(16% 71%, 100% 44%, 99% 63%, 16% 87%);
+  -moz-clip-path: polygon(16% 71%, 100% 44%, 99% 63%, 16% 87%);
+  clip-path: polygon(16% 71%, 100% 44%, 99% 63%, 16% 87%);
+}
+
+.six,
+.backgroundObjective:hover .one {
+  -webkit-clip-path: polygon(16% 71%, 54% 100%, 16% 87%);
+  -moz-clip-path: polygon(16% 71%, 54% 100%, 16% 87%);
+  clip-path: polygon(16% 71%, 54% 100%, 16% 87%);
+}
+
+.backgroundEconomy {
+  position: absolute;
+  left: -30%;
+  bottom: 97%;
+}
+
+.frontEconomy{
+  background: #425EC3;
+}
+
+.backEconomy{
+  background: #FFFD67;
+  background-size: cover;
+  background-position: 40% 50%;
+}
+
+.shapeEconomy {
+  position: absolute;
+  /*top: 50%;*/
+  /*left: 50%;*/
+  height: calc(50vw + 60vh);
+  /*margin-left: -75px;*/
+  /*margin-top: -150px;*/
+  width: calc(75vw + 60vh);
+  transition: 1s all ease;
+  transform: rotate(120deg);
+}
+
+.one,
+.backgroundEconomy:hover .six {
+  -webkit-clip-path: polygon(10% 10%, 51% 0, 10% 27%);
+  -moz-clip-path: polygon(10% 10%, 51% 0, 10% 27%);
+  clip-path: polygon(10% 10%, 51% 0, 10% 27%);
+}
+
+.two,
+.backgroundEconomy:hover .five {
+  -webkit-clip-path: polygon(10% 10%, 87% 19%, 86% 32%, 10% 27%);
+  -moz-clip-path: polygon(10% 10%, 87% 19%, 86% 32%, 10% 27%);
+  clip-path: polygon(10% 10%, 87% 19%, 86% 32%, 10% 27%);
+}
+
+.three,
+.backgroundEconomy:hover .four {
+  -webkit-clip-path: polygon(0% 41%, 87% 19%, 86% 32%, 0% 58%);
+  -moz-clip-path: polygon(0% 41%, 87% 19%, 86% 32%, 0% 58%);
+  clip-path: polygon(0% 41%, 87% 19%, 86% 32%, 0% 58%);
+}
+
+.four,
+.backgroundEconomy:hover .three {
+  -webkit-clip-path: polygon(0% 41%, 100% 44%, 99% 63%, 0% 58%);
+  -moz-clip-path: polygon(0% 41%, 100% 44%, 99% 63%, 0% 58%);
+  clip-path: polygon(0% 41%, 100% 44%, 99% 63%, 0% 58%);
+}
+
+.five,
+.backgroundEconomy:hover .two {
+  -webkit-clip-path: polygon(16% 71%, 100% 44%, 99% 63%, 16% 87%);
+  -moz-clip-path: polygon(16% 71%, 100% 44%, 99% 63%, 16% 87%);
+  clip-path: polygon(16% 71%, 100% 44%, 99% 63%, 16% 87%);
+}
+
+.six,
+.backgroundEconomy:hover .one {
+  -webkit-clip-path: polygon(16% 71%, 54% 100%, 16% 87%);
+  -moz-clip-path: polygon(16% 71%, 54% 100%, 16% 87%);
+  clip-path: polygon(16% 71%, 54% 100%, 16% 87%);
+}
+
+.backgroundEntrepe {
+  position: absolute;
+  bottom: 100%;
+  right: 60%;
+}
+
+.frontEntrepe {
+  background: #F1F2F2;
+}
+
+.backEntrepe {
+  background: #FFFC4B;
+  background-size: cover;
+  background-position: 40% 50%;
+}
+
+.shapeEntrepe {
+  position: absolute;
+  /*top: 50%;*/
+  /*left: 50%;*/
+  height: calc(30vw + 50vh);
+  /*margin-left: -75px;*/
+  /*margin-top: -150px;*/
+  width: calc(50vw + 50vh);
+  transition: 1s all ease;
+  transform: rotate(140deg);
+}
+
+.one,
+.backgroundEntrepe:hover .six {
+  -webkit-clip-path: polygon(10% 10%, 51% 0, 10% 27%);
+  -moz-clip-path: polygon(10% 10%, 51% 0, 10% 27%);
+  clip-path: polygon(10% 10%, 51% 0, 10% 27%);
+}
+
+.two,
+.backgroundEntrepe:hover .five {
+  -webkit-clip-path: polygon(10% 10%, 87% 19%, 86% 32%, 10% 27%);
+  -moz-clip-path: polygon(10% 10%, 87% 19%, 86% 32%, 10% 27%);
+  clip-path: polygon(10% 10%, 87% 19%, 86% 32%, 10% 27%);
+}
+
+.three,
+.backgroundEntrepe:hover .four {
+  -webkit-clip-path: polygon(0% 41%, 87% 19%, 86% 32%, 0% 58%);
+  -moz-clip-path: polygon(0% 41%, 87% 19%, 86% 32%, 0% 58%);
+  clip-path: polygon(0% 41%, 87% 19%, 86% 32%, 0% 58%);
+}
+
+.four,
+.backgroundEntrepe:hover .three {
+  -webkit-clip-path: polygon(0% 41%, 100% 44%, 99% 63%, 0% 58%);
+  -moz-clip-path: polygon(0% 41%, 100% 44%, 99% 63%, 0% 58%);
+  clip-path: polygon(0% 41%, 100% 44%, 99% 63%, 0% 58%);
+}
+
+.five,
+.backgroundEntrepe:hover .two {
+  -webkit-clip-path: polygon(16% 71%, 100% 44%, 99% 63%, 16% 87%);
+  -moz-clip-path: polygon(16% 71%, 100% 44%, 99% 63%, 16% 87%);
+  clip-path: polygon(16% 71%, 100% 44%, 99% 63%, 16% 87%);
+}
+
+.six,
+.backgroundEntrepe:hover .one {
+  -webkit-clip-path: polygon(16% 71%, 54% 100%, 16% 87%);
+  -moz-clip-path: polygon(16% 71%, 54% 100%, 16% 87%);
+  clip-path: polygon(16% 71%, 54% 100%, 16% 87%);
 }
