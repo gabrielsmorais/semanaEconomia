@@ -248,7 +248,7 @@ h2:after {
 
 #main5 {
   font-family: 'Oswald', sans-serif !important;
-  color: #DCA13D;
+  color: #321EBF;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -349,7 +349,7 @@ h2:after {
 	height: 2px;
 	width: 100%;
 	content: "";
-	background: #DCA13D;
+	background: #321EBF;
 	display: block;
 	position: absolute;
 	transition: width 0.4s ease;
@@ -444,7 +444,7 @@ h2:after {
 .backgroundEconomy {
   position: absolute;
   left: -30%;
-  bottom: 97%;
+  bottom: 90%;
 }
 
 .frontEconomy{
@@ -466,7 +466,7 @@ h2:after {
   /*margin-top: -150px;*/
   width: calc(75vw + 60vh);
   transition: 1s all ease;
-  transform: rotate(120deg);
+  transform: rotate(140deg);
 }
 
 .one,
@@ -513,16 +513,16 @@ h2:after {
 
 .backgroundEntrepe {
   position: absolute;
-  bottom: 100%;
+  bottom: 110%;
   right: 60%;
 }
 
 .frontEntrepe {
-  background: #F1F2F2;
+  background: #FFFD67;
 }
 
 .backEntrepe {
-  background: #FFFC4B;
+  background: #F1F2F2;
   background-size: cover;
   background-position: 40% 50%;
 }
@@ -534,9 +534,9 @@ h2:after {
   height: calc(30vw + 50vh);
   /*margin-left: -75px;*/
   /*margin-top: -150px;*/
-  width: calc(50vw + 50vh);
+  width: calc(30vw + 80vh);
   transition: 1s all ease;
-  transform: rotate(140deg);
+  transform: rotate(330deg);
 }
 
 .one,
