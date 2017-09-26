@@ -491,7 +491,7 @@
   }
 
   .backEconomy{
-    background: #FFFD67;
+    background: #FFFC4B;
     background-size: cover;
     background-position: 40% 50%;
   }
@@ -638,6 +638,8 @@
     width: 100%;
     background-color: #060791;
     position: relative;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.2) 100%, transparent), url(../resources/headerP2.png);
+    background-size: cover;
   }
 
   .contentPageTop{
